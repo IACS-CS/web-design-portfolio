@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Start Live Server",
+        "type": "shell",
+        "command": "npx",
+        "args": ["live-server", "--no-browser","public/"],
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "presentation": {
+          "focus": true,
+          "panel": "shared",
+          "showReuseMessage": false,
+          "clear": true
+        }
+      }
+    ]
+  }
+  
