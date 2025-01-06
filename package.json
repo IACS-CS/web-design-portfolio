@@ -1,16 +1,14 @@
 {
   "name": "web-design-portfolio",
   "version": "1.0.0",
-  "description": "Web Design Portfolio Assignment",
-  "main": "main.js",
+  "description": "Web Design Project",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "live-server public/"
+    "start": "browser-sync start --server --files './*.html,./*.css'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "browser-sync": "^3.0.3"
   }
 }

@@ -1,0 +1,55 @@
+/* There's some sample CSS here which you can use or nuke as you like */
+
+html {
+  /* Make #id links scroll smoothly */
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Change to something you like, but please do customize the font! */
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.4;
+  /* reset default margins */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  box-sizing: border-box;
+  /* Full screen hero section */
+  width: 100%;
+  height: 100dvh;
+  /* Center the content vertically and horizontally */
+  display: grid;
+  place-content: center;
+  /* Custom text and stuff */
+  background: #0033a0;
+  color: white;
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 70px;
+  text-align: center;
+}
+.hero a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #c6093b;
+}
+
+/* A little "activation" to demonstrate JS is working in the template */
+.hero {
+  transition: background 0.5s;
+}
+.hero.active {
+  background: #c6093b;
+}
+
+main {
+  /* Make sure our content can scroll the hero away */
+  min-height: 100dvh;
+  max-width: 35em; /* choose a width for text */
+  line-height: 1.8; /* choose a line spacing */
+  font-size: 18px; /* choose a font size */
+  margin: 0 auto; /* center the content */
+}
