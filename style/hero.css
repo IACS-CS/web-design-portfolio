@@ -1,0 +1,45 @@
+.hero h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.hero {
+  box-sizing: border-box;
+  /* Full screen hero section */
+  width: 100%;
+  min-height: 100dvh;
+  background: #0033a0;
+  color: white;
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+.hero a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #c6093b;
+}
+
+/* A little "activation" to demonstrate JS is working in the template */
+.hero {
+  transition: background 0.5s;
+}
+.hero.active {
+  background: #c6093b;
+}
+.hero.active a {
+  color: white;
+  text-decoration-color: #0033a0;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 801px) {
+  .hero {
+    font-size: 75px;
+  }
+}
